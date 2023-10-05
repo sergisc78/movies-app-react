@@ -1,0 +1,297 @@
+body {
+  /*background: #7F7FD5;
+  /* fallback for old browsers 
+  background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+  /* Chrome 10-25, Safari 5.1-6 
+  background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url('../assets/img/cine2.jpg');
+  padding: 10px;
+
+}
+
+/* HOME - SLIDE / CAROUSEL */
+
+.carousel {
+  position: relative;
+  padding: 0;
+  margin-bottom: 200px;
+}
+
+.moviePoster {
+  display: block;
+  width: 60%;
+  margin: auto;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+  height: 90px;
+}
+
+.nav-link.active {
+  color: black;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-link.user-icon {
+  margin-left: auto;
+  margin-right: 25px;
+
+}
+
+.title {
+  font-size: 30px;
+  margin-top: 150px;
+  height: 180px;
+  width: 50%;
+  margin: auto;
+  background: #4568DC;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #B06AB3, #4568DC);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.register {
+  margin: auto;
+}
+
+/* LOGIN */
+
+
+.wrapper {
+  height: 100vh;
+}
+
+.login {
+  width: 400px;
+  height: min-content;
+  padding: 20px;
+  border-radius: 5px;
+  color: black;
+  background: #FFEFBA;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 35px;
+}
+
+.login-register {
+  color: black;
+}
+
+/* REGISTER */
+
+.register-user {
+  width: 400px;
+  height: min-content;
+  padding: 20px;
+  border-radius: 5px;
+  color: black;
+  background: #FFEFBA;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 75px;
+}
+
+/* MOVIE */
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+
+.searchMovie {
+  font-family: 'Poppins', sans-serif;
+  border-width: 3px;
+}
+
+button.search {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.movie-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.movie-card h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.movie-card p {
+  margin-bottom: 5px;
+}
+
+h4 {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.overview {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  text-align: justify;
+}
+
+/*ALERTCOMPONENT */
+
+.alert {
+  margin-top: 10px;
+}
+
+
+/* RECOVERPASSWORDCOMPONENT */
+
+.recover-password {
+  width: 400px;
+  height: min-content;
+  padding: 20px;
+  border-radius: 5px;
+  color: black;
+  background: #FFEFBA;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 220px;
+  margin-top: 5px;
+}
+
+
+/* MOBILE STYLES */
+@media (max-width: 600px) {
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+
+  .movie-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .movie-card {
+    padding: 10px;
+  }
+
+  .movie-card h2 {
+    font-size: 16px;
+  }
+
+  .login {
+    width: 400px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 5px;
+    color: black;
+    background: #FFEFBA;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 250px;
+  }
+
+  .register-user {
+    width: 400px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 5px;
+    color: black;
+    background: #FFEFBA;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 300px;
+  }
+
+  .recover-password {
+    width: 400px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 5px;
+    color: black;
+    background: #FFEFBA;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 400px;
+  }
+
+  .carousel {
+    margin-bottom: 400px;
+  }
+}
+
+
